@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Main Page ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" 
+              href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" 
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+            th {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container w3-teal">
+            <h1>Header</h1>
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-right">
+                    <i class="fa fa-home"></i> Home</a>
+                <a href="#" class="w3-bar-item w3-button w3-right">
+                    <i class="fa fa-search"></i> Search</a>
+                <a href="#" class="w3-bar-item w3-button w3-right">
+                    <i class="fa fa-sign-in"></i> Sign In</a>
+                <a href="#" class="w3-bar-item w3-button w3-right">
+                    <i class="fa fa-envelope"></i> Email</a>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-light-grey w3-bar-block" 
+             style="width:25%">
+            <h3 class="w3-bar-item">Menu</h3>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <div id="myContent" class="w3-container" 
+             style="margin-left:25%">
+
+            <div class="w3-card-4">
+                <div class="w3-container w3-green">
+                    <h2>ฟอร์มยื่นคำร้อง</h2>
+                </div>
+                <form class="w3-container" action="/action_page.php">
+                    First name*:<br>
+                    <input type="text" name="firstname" 
+                           required 
+                           pattern="[A-Z][A-Za-z0-9]*" maxlength="10" 
+                           placeholder="Only Capital Letter">
+                    <br>
+                    Last name*:<br>
+                    <input type="text" name="lastname" value="Mouse" disabled>
+                    <br><br>
+                    <input type="submit" value="OK">
+                </form> 
+            </div>
+
+
+            <div>
+                <table>
+                    <tr>
+                        <th>ชื่อ</th>
+                        <th>นามสกุล</th>
+                        <th>รหัสนักศึกษา</th>
+                    </tr>
+                    <tr>
+                        <td>ทรงศักดิ์</td>
+                        <td>รองวิริยะพานิช</td>
+                        <td>123456</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+            <div>TODO write content</div>
+            <h1>This is my header 1.</h1>
+            <h2>This is my header 2.</h2>
+            <h6>This is my header 6.</h6>
+
+            <div class="w3-cell-row">
+                <div class="w3-container w3-cell w3-grey">
+                    <p>My paragraph in column 1.</p>
+                </div>
+                <div class="w3-container w3-cell w3-green">
+                    <p>My paragraph in column 2.</p>
+                </div>
+                <div class="w3-container w3-cell w3-teal">
+                    <p>My paragraph in column 3.</p>
+                </div>
+            </div>  
+
+            <a href="http://www.cs.tu.ac.th">This is a link</a>
+            <div>
+                <img src="img/doraemon.jpg" alt="Doraemon Figure" width="304" height="228">
+            </div>
+
+            <div>
+                <h2>An Unordered HTML List</h2>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>                        
+            </div>
+
+            <div>
+                <h2>An Ordered HTML List</h2>
+
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol> 
+            </div>        
+
+
+            <input type="button" onclick="showHello('Songsakdi')" value="Click Me!">
+        </div>
+        <div class="w3-container w3-grey">
+            <div class="w3-display-container" style="height:300px;">
+                <div class="w3-display-middle">
+                    <p>Footer</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            function showHello(name) {
+                alert('Hello ' + name);
+            }
+
+        </script>
+
+    </body>
+</html>
